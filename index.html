@@ -484,12 +484,33 @@
           </div>
 
           <div class="contact-form">
-            <form>
-              <input type="text" placeholder="Your Name" />
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p style="display: none">
+                <label
+                  >Don’t fill this out if you’re human: <input name="bot-field"
+                /></label>
+              </p>
 
-              <input type="email" placeholder="Your Email" />
+              <input type="text" name="name" placeholder="Your Name" required />
 
-              <textarea placeholder="Your Message"></textarea>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
 
               <button type="submit">Send Message</button>
             </form>
