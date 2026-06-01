@@ -331,7 +331,7 @@ whatsappBtn.addEventListener("click", () => {
 
   message += `%0ATotal: ₦${total.toLocaleString()}`;
 
-  window.open(`https://wa.me/2349012345678?text=${message}`, "_blank");
+  window.open(`https://wa.me/2349023679816?text=${message}`, "_blank");
 });
 
 // TOAST NOTIFICATION
