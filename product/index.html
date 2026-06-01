@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="1000046789-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>MELANIN BEAUTY- Products</title>
+  </head>
+  <body>
+    <header>
+      <!-- header -->
+      <nav class="contain container reveal">
+        <a href="/index.html" id="logo"
+          ><img src="1000046789-removebg-preview.png" alt="logo" />
+          <p class="logo-text">MELANIN BEAUTY</p></a
+        >
+
+        <!-- toggle input -->
+        <input type="checkbox" id="menu-toggle" hidden />
+
+        <!-- icon opens menu -->
+        <label for="menu-toggle" class="dropdownimg">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- full dropdown -->
+        <div class="dropdown">
+          <ul>
+            <div class="navtext">
+              <a href="/About/index.html"><li>About Us</li></a>
+              <a href="#products"><li>Products</li></a>
+              <a href="#reviews"><li>Reviews</li></a>
+              <a href="#contact"><li>Contact</li></a>
+            </div>
+
+            <!-- nav button -->
+            <button class="navbutton"><a href="#category">Shop</a></button>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="product-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <h1>Our Products</h1>
+          <p>Skincare Designed For Melanin-Rich Beauty.</p>
+          <a href="#category" class="btn">Explore Collection</a>
+        </div>
+      </section>
+
+      <section id="category" class="contain container">
+        <div class="sec-head">
+          <p class="intro">OUR COLLECTIONS</p>
+          <h1></h1>
+        </div>
+
+        <!-- CATEGORY BUTTONS -->
+        <div class="category-container">
+          <button class="category-btn active" data-category="All">All</button>
+          <button class="category-btn" data-category="Serum">Serums</button>
+          <button class="category-btn" data-category="Cleanser">
+            Cleansers
+          </button>
+          <button class="category-btn" data-category="Moisturizer">
+            Moisturizers
+          </button>
+          <button class="category-btn" data-category="Mask">Masks</button>
+          <button class="category-btn" data-category="Sunscreen">
+            Sunscreens
+          </button>
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div class="products-grid" id="productsGrid"></div>
+      </section>
+
+      <!-- CART BUTTON -->
+      <div class="cart-icon" id="cartIcon">
+        <i class="fas fa-shopping-bag"></i>
+        <span id="cartCount">0</span>
+      </div>
+
+      <!-- CART OVERLAY -->
+      <div class="cart-overlay" id="cartOverlay"></div>
+
+      <!-- CART DRAWER -->
+      <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+          <h2>Your Cart</h2>
+          <i class="fas fa-xmark" id="closeCart"></i>
+        </div>
+
+        <!-- CART ITEMS -->
+        <div class="cart-items" id="cartItems"></div>
+
+        <!-- EMPTY CART -->
+        <div class="empty-cart" id="emptyCart">
+          <i class="fas fa-shopping-bag"></i>
+          <p>Your cart is empty</p>
+          <button onclick="closeCart()">Continue Shopping</button>
+        </div>
+
+        <!-- CART FOOTER -->
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <span id="cartTotal">₦0</span>
+          </div>
+
+          <button class="whatsapp-btn" id="whatsappBtn">
+            Order on WhatsApp
+          </button>
+        </div>
+      </div>
+      <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        Product added to cart
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <h2>Melanin Beauty</h2>
+          <p>
+            Luxury skincare crafted to enhance your natural glow with clean and
+            gentle ingredients.
+          </p>
+
+          <div class="social-icons">
+            <a
+              href="https://wa.me/2348012345678?text=Hi%20Melanin%20Beauty,%20I'm%20interested%20in%20your%20skincare%20products."
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/melaninbeauty" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/melaninbeauty" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="/About/index.html">About</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="footer-links">
+          <h3>Products</h3>
+          <a href="#">Cleanser</a>
+          <a href="#">Serum</a>
+          <a href="#">Moisturizer</a>
+          <a href="#">Sunscreen</a>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Email: melanibeauty@gmail.com</p>
+          <p>Phone: +234 901 234 5678</p>
+          <p>Delta State, Nigeria</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Melani Beauty. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
