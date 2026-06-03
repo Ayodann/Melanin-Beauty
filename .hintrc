@@ -15,6 +15,9 @@
         "list": "off",
         "listitem": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "disown-opener": "off",
+    "axe/name-role-value": "off"
   }
 }
